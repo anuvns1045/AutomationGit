@@ -9,13 +9,12 @@ Signing into account
     [Tags]
     Sign in to your account
 
-#Click laptop and computer menu
-#    [Tags]  A
-#    laptops and computers menu and select mouse product
+Click laptop and computer menu
+    [Tags]  A
+    laptops and computers menu and select mouse product
 
-
-#Cart check and secure checkout functionmality
-#    Cart check and secure checkout
+Cart check and secure checkout functionmality
+    Cart check and secure checkout
 #
 #Payment functionality check
 #    Payment functionality
@@ -23,4 +22,8 @@ Signing into account
 
 #robot --test "Signing into account" --test "Click laptop and computer menu" Resources/Tests.robot
 #robot --test "Signing into account" --test "Payment functionality check" Resources/Tests.robot
+
+
+
+
 

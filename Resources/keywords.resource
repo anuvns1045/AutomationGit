@@ -1,6 +1,6 @@
 *** Settings ***
 Resource        ../Common_libraries/common_utilities.resource
-Variables       variables.py
+
 
 *** Keywords ***
 Sign in to your account
@@ -14,17 +14,24 @@ Sign in to your account
 
 laptops and computers menu and select mouse product
     Wait Until Element Is Visible    ${LAPTOP_AND_COMPUTERS_ICON_LOCATOR}
-    Click Element    ${LAPTOP_AND_COMPUTERS_ICON_LOCATOR}
-    Scroll Element Into View    ${MOUSE_PRODUCT_LOCATOR}
-    Click Element    ${MOUSE_ADD_TO_CART_LOCATOR}
+    Mouse Over    ${LAPTOP_AND_COMPUTERS_ICON_LOCATOR}
+    Click Element    ${Laptops_and_accessories}
+    Sleep    5
+    Mouse Over    ${MONITOR_LOCATOR}
+    Click Element    ${MONITOR_ADD_TO_CART_LOCATOR}
+    Sleep    5
+#    Scroll Element Into View    ${MOUSE_PRODUCT_LOCATOR}
+
     Sleep    5
 
-Cart check and secure checkout 
+Cart check and secure checkout
     Wait Until Element Is Visible    ${CART_LOCATOR}
-    Click Element    ${CART_LOCATOR}    
+    Click Element    ${CART_LOCATOR}
     Click Element    ${SECURE_CHECKOUT_LOCATOR}
-    Wait Until Element Is Visible    ${SHIPPING_METHOD_SELECTION}
-    Click Element    ${SHIPPING_METHOD_SELECTION}
+    Sleep    10
+#    Wait Until Element Is Visible    ${SHIPPING_METHOD_SELECTION}
+    Click Element    //div[@class="CheckoutDeliveryOption-Span"]/strong[text()='Standard Post']  # ......IMP......
+ #    Select Radio Button   option-Standard Post  ${SHIPPING_METHOD_SELECTION}
     Click Element    ${PROCEED_TO_BILLING_BUTTON}
 
 Payment functionality
@@ -34,12 +41,12 @@ Payment functionality
     Click Element    ${COMPLETE_ORDER_BUTTON}
 
 
-    
 
 
-    
-
-    
 
 
-    
+
+
+
+
+

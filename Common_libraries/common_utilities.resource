@@ -3,6 +3,7 @@ Library     SeleniumLibrary
 Library     common_variables.py
 Library     String
 Library     DateTime
+Variables   ../Resources/variables.py
 
 
 
@@ -16,6 +17,8 @@ Generate And Return Unique Email
     ${Modified_Date}    Generate Unique Date Without Special Characters
     ${Unique_Name}  Catenate    Email${Modified_Date}@mail.com
     [Return]   ${Unique_Name}
+
+
 
 
 

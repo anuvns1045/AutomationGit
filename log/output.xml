@@ -1,98 +1,230 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-07-05T10:47:18.675063" rpa="false" schemaversion="5">
+<robot generator="Robot 7.2.2 (Python 3.13.0 on win32)" generated="2025-07-07T11:20:09.135544" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Resources\Tests.robot">
 <kw name="Open Browser" owner="SeleniumLibrary" type="SETUP">
-<msg time="2025-07-05T10:47:19.216171" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
+<msg time="2025-07-07T11:20:09.616520" level="INFO">Opening browser 'gc' to base url 'None'.</msg>
 <arg>${None}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-07-05T10:47:19.215061" elapsed="2.434635"/>
+<status status="PASS" start="2025-07-07T11:20:09.615942" elapsed="1.539800"/>
 </kw>
 <test id="s1-t1" name="Signing into account" line="8">
 <kw name="Run Keywords" owner="BuiltIn" type="SETUP">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-07-05T10:47:21.653421" level="INFO">Opening url 'https://tech-demo.scandipwa.com/tech_storeview/'</msg>
+<msg time="2025-07-07T11:20:11.158668" level="INFO">Opening url 'https://tech-demo.scandipwa.com/tech_storeview/'</msg>
 <arg>${HOME_URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-07-05T10:47:21.652708" elapsed="1.504676"/>
+<status status="PASS" start="2025-07-07T11:20:11.158143" elapsed="1.348836"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-07-05T10:47:23.157837" elapsed="0.099724"/>
+<status status="PASS" start="2025-07-07T11:20:12.507614" elapsed="0.108701"/>
 </kw>
 <arg>Go To</arg>
 <arg>${HOME_URL}</arg>
 <arg>AND</arg>
 <arg>Maximize Browser Window</arg>
 <doc>Executes all the given keywords in a sequence.</doc>
-<status status="PASS" start="2025-07-05T10:47:21.651602" elapsed="1.606367"/>
+<status status="PASS" start="2025-07-07T11:20:11.157286" elapsed="1.459329"/>
 </kw>
 <kw name="Sign in to your account" owner="keywords">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${SIGN_IN_LOCATOR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-05T10:47:23.259942" elapsed="0.297548"/>
+<status status="PASS" start="2025-07-07T11:20:12.617849" elapsed="0.317482"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-05T10:47:23.558542" level="INFO">Clicking element '//button[@id='myAccount']/*[name()='svg']'.</msg>
+<msg time="2025-07-07T11:20:12.936410" level="INFO">Clicking element '//button[@id='myAccount']/*[name()='svg']'.</msg>
 <arg>${SIGN_IN_LOCATOR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-05T10:47:23.558051" elapsed="0.157494"/>
+<status status="PASS" start="2025-07-07T11:20:12.935785" elapsed="0.179667"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>${EMAIL_BOX_LOCATOR}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2025-07-05T10:47:23.716045" elapsed="0.248236"/>
+<status status="PASS" start="2025-07-07T11:20:13.116185" elapsed="0.275808"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-05T10:47:23.965609" level="INFO">Typing text 'anurag9132@gmail.com' into text field '//input[@id='email']'.</msg>
+<msg time="2025-07-07T11:20:13.392919" level="INFO">Typing text 'anurag9132@gmail.com' into text field '//input[@id='email']'.</msg>
 <arg>${EMAIL_BOX_LOCATOR}</arg>
 <arg>${EMAIL_ID}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-05T10:47:23.964832" elapsed="0.304310"/>
+<status status="PASS" start="2025-07-07T11:20:13.392408" elapsed="0.264989"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-07-05T10:47:24.270603" level="INFO">Typing text '11qqqaaz' into text field '//input[@id='password']'.</msg>
+<msg time="2025-07-07T11:20:13.658476" level="INFO">Typing text '11qqqaaz' into text field '//input[@id='password']'.</msg>
 <arg>${PASSWORD_BOX_LOCATOR}</arg>
 <arg>${PASSWORD}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-05T10:47:24.269702" elapsed="0.211378"/>
+<status status="PASS" start="2025-07-07T11:20:13.657814" elapsed="0.202005"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-07-05T10:47:24.482570" level="INFO">Clicking element '//button[text()='Sign in']'.</msg>
+<msg time="2025-07-07T11:20:13.860732" level="INFO">Clicking element '//button[text()='Sign in']'.</msg>
 <arg>${SIGN_IN_BUTTON_LOCATOR}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-07-05T10:47:24.481739" elapsed="0.185746"/>
+<status status="PASS" start="2025-07-07T11:20:13.860234" elapsed="0.156956"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-07-05T10:47:29.668936" level="INFO">Slept 5 seconds.</msg>
+<msg time="2025-07-07T11:20:19.018898" level="INFO">Slept 5 seconds.</msg>
 <arg>5</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-07-05T10:47:24.668193" elapsed="5.001187"/>
+<status status="PASS" start="2025-07-07T11:20:14.017860" elapsed="5.001418"/>
 </kw>
-<status status="PASS" start="2025-07-05T10:47:23.258967" elapsed="6.410724"/>
+<status status="PASS" start="2025-07-07T11:20:12.617135" elapsed="6.402393"/>
 </kw>
-<status status="PASS" start="2025-07-05T10:47:21.650263" elapsed="8.019756"/>
+<status status="PASS" start="2025-07-07T11:20:11.156200" elapsed="7.863603"/>
+</test>
+<test id="s1-t2" name="Click laptop and computer menu" line="12">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:19.022238" level="INFO">Opening url 'https://tech-demo.scandipwa.com/tech_storeview/'</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-07T11:20:19.021855" elapsed="0.563428"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-07T11:20:19.585730" elapsed="0.021392"/>
+</kw>
+<arg>Go To</arg>
+<arg>${HOME_URL}</arg>
+<arg>AND</arg>
+<arg>Maximize Browser Window</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-07-07T11:20:19.021382" elapsed="0.586123"/>
+</kw>
+<kw name="laptops and computers menu and select mouse product" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LAPTOP_AND_COMPUTERS_ICON_LOCATOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-07T11:20:19.609007" elapsed="0.364261"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:19.974143" level="INFO">Simulating Mouse Over on element '//figcaption[text()='Laptops and Computers']'.</msg>
+<arg>${LAPTOP_AND_COMPUTERS_ICON_LOCATOR}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:19.973667" elapsed="0.287796"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:20.262557" level="INFO">Clicking element '//figcaption[text()='Laptops &amp; Accessories']'.</msg>
+<arg>${Laptops_and_accessories}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:20.261932" elapsed="0.210131"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T11:20:25.473558" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T11:20:20.472665" elapsed="5.001235"/>
+</kw>
+<kw name="Mouse Over" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:25.474685" level="INFO">Simulating Mouse Over on element '//p[@class = 'ProductCard-Name']'.</msg>
+<arg>${MONITOR_LOCATOR}</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:25.474229" elapsed="0.289068"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:25.764176" level="INFO">Clicking element '(//span[text()='Add to cart'])[1]'.</msg>
+<arg>${MONITOR_ADD_TO_CART_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:25.763704" elapsed="0.091303"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T11:20:30.855993" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T11:20:25.855435" elapsed="5.000888"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T11:20:35.857387" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T11:20:30.856626" elapsed="5.001077"/>
+</kw>
+<status status="PASS" start="2025-07-07T11:20:19.608133" elapsed="16.249816"/>
+</kw>
+<tag>A</tag>
+<status status="PASS" start="2025-07-07T11:20:19.020537" elapsed="16.837796"/>
+</test>
+<test id="s1-t3" name="Cart check and secure checkout functionmality" line="16">
+<kw name="Run Keywords" owner="BuiltIn" type="SETUP">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:35.860571" level="INFO">Opening url 'https://tech-demo.scandipwa.com/tech_storeview/'</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-07-07T11:20:35.860282" elapsed="0.392156"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-07-07T11:20:36.253211" elapsed="0.082046"/>
+</kw>
+<arg>Go To</arg>
+<arg>${HOME_URL}</arg>
+<arg>AND</arg>
+<arg>Maximize Browser Window</arg>
+<doc>Executes all the given keywords in a sequence.</doc>
+<status status="PASS" start="2025-07-07T11:20:35.859909" elapsed="0.475701"/>
+</kw>
+<kw name="Cart check and secure checkout" owner="keywords">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${CART_LOCATOR}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-07-07T11:20:36.337291" elapsed="0.087060"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:36.425898" level="INFO">Clicking element '//span[@aria-label='Items in cart']'.</msg>
+<arg>${CART_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:36.425078" elapsed="0.116251"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:36.543374" level="INFO">Clicking element '//button[@class='CartOverlay-CheckoutButton Button']'.</msg>
+<arg>${SECURE_CHECKOUT_LOCATOR}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:36.542436" elapsed="0.157036"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-07-07T11:20:46.701272" level="INFO">Slept 10 seconds.</msg>
+<arg>10</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-07-07T11:20:36.700099" elapsed="10.001621"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:46.702536" level="INFO">Clicking element '//div[@class="CheckoutDeliveryOption-Span"]/strong[text()='Standard Post']'.</msg>
+<arg>//div[@class="CheckoutDeliveryOption-Span"]/strong[text()='Standard Post']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:46.702094" elapsed="0.118003"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-07-07T11:20:46.821030" level="INFO">Clicking element '//button[text()='Proceed to billing']'.</msg>
+<arg>${PROCEED_TO_BILLING_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-07-07T11:20:46.820538" elapsed="0.101701"/>
+</kw>
+<status status="PASS" start="2025-07-07T11:20:36.336155" elapsed="10.586427"/>
+</kw>
+<status status="PASS" start="2025-07-07T11:20:35.859127" elapsed="11.063718"/>
 </test>
 <kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-07-05T10:47:29.671300" elapsed="2.322082"/>
+<status status="PASS" start="2025-07-07T11:20:46.924169" elapsed="2.382433"/>
 </kw>
-<status status="PASS" start="2025-07-05T10:47:18.694843" elapsed="13.298790"/>
+<status status="PASS" start="2025-07-07T11:20:09.157928" elapsed="40.149023"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="1" fail="0" skip="0">A</stat>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Tests" id="s1" pass="3" fail="0" skip="0">Tests</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2025-07-05T10:47:18.739703" level="WARN">Error in file 'C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Common_libraries\common_utilities.resource' on line 13: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-07-05T10:47:18.739971" level="WARN">Error in file 'C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Common_libraries\common_utilities.resource' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
-<msg time="2025-07-05T10:47:19.198426" level="WARN">Imported library 'C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Common_libraries\common_variables.py' contains no keywords.</msg>
+<msg time="2025-07-07T11:20:09.202278" level="WARN">Error in file 'C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Common_libraries\common_utilities.resource' on line 14: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-07-07T11:20:09.202555" level="WARN">Error in file 'C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Common_libraries\common_utilities.resource' on line 19: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2025-07-07T11:20:09.601972" level="WARN">Imported library 'C:\Users\HP\PycharmProjects\robot\Ecomm2_ScandiPWA\Common_libraries\common_variables.py' contains no keywords.</msg>
 </errors>
 </robot>
