@@ -4,6 +4,7 @@ Resource        ../Common_libraries/common_utilities.resource
 
 *** Keywords ***
 Sign in to your account
+
     Wait Until Element Is Visible    ${SIGN_IN_LOCATOR}
     Click Element    ${SIGN_IN_LOCATOR}
     Wait Until Element Is Visible    ${EMAIL_BOX_LOCATOR}

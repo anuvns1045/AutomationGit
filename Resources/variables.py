@@ -21,7 +21,11 @@ SHIPPING_METHOD_SELECTION = "//input[@id='option-Standard Post']"
 PROCEED_TO_BILLING_BUTTON = "//button[text()='Proceed to billing']"
 COD_CHECKBOX_LOCATOR = 'id="option-Cash On Delivery"'
 TERMS_CONDITIONS_CHECKBOX = 'id="termsAndConditions"'
+
+
 COMPLETE_ORDER_BUTTON = "//button[text()='Complete order']"
+
+
 
 
 
